@@ -21,7 +21,7 @@
     Still suffers from vanishing gradients, but less than sigmoid
 
 3. ReLU (Rectified Linear Unit)
- - ReLU(z)=max⁡(0,z)
+ - ReLU(z) = max⁡(0,z)
 
     Range: [0, ∞)
 
