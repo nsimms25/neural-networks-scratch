@@ -3,4 +3,8 @@ import numpy as np
 def sigmoid(x):
     return 1/(1 + np.exp(-x))
 
-print(sigmoid(1))
+def relu(x):
+    return max(0, x)
+
+def tanh(x):
+    (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
