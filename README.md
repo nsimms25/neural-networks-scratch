@@ -2,8 +2,7 @@
 
 🔁 Common Activation Functions
 1. Sigmoid
-sigmoid(z)=11+e−z
-sigmoid(z)=1+e−z1​
+sigmoid(z) = 1 / (1+e^(−z))
 
     Range: (0, 1)
 
@@ -13,8 +12,7 @@ sigmoid(z)=1+e−z1​
 
 Visual: S-shaped curve
 2. Tanh (Hyperbolic Tangent)
-tanh(z)=ez−e−zez+e−z
-tanh(z)=ez+e−zez−e−z​
+tanh(z) = (e^(z) − e^(−z)) / (e^(z) + e^(−z))
 
     Range: (-1, 1)
 
@@ -24,7 +22,6 @@ tanh(z)=ez+e−zez−e−z​
 
 3. ReLU (Rectified Linear Unit)
 ReLU(z)=max⁡(0,z)
-ReLU(z)=max(0,z)
 
     Range: [0, ∞)
 
