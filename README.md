@@ -10,7 +10,7 @@
 
     Problem: Can cause vanishing gradients in deep networks
 
-Visual: S-shaped curve
+ - Visual: S-shaped curve
 2. Tanh (Hyperbolic Tangent)
  - tanh(z) = (e^(z) − e^(−z)) / (e^(z) + e^(−z))
 
