@@ -3,7 +3,6 @@ generalized_functions.py
 
 This file is to create generalized functions for more flexible use. 
 
-Author: Your Name
 Date: 2025-04-24
 Version: 0
 """
