@@ -29,19 +29,26 @@ def general_init_parameters(n_input: int, n_hidden: list[int], n_output, init_me
     weight_matrix_list = []
     bias_matrix_list = []
 
-    holding_dict = {}
+    input_weights = np.random.randn(n_input, n_hidden[0])
+    input_bias = np.random.randn(n_input, n_hidden[0])
 
-    for i, layer_num in enumerate(n_hidden):
-        if i == 1:
-            weight_0 = np.random.randn(n_input, n_hidden[layer_num]) #Always 1 hidden layer.
-            weight_matrix_list.append(weight_0)
-        else:
-            holding_dict[f"layer{i}"] = np.random.randn(weight_matrix_list[i-1], n_hidden[layer_num]) #Always 1 hidden layer.
-            weight_matrix_list.append(holding_dict[f"layer{1}"])
+    weight_matrix_list.append(input_weights)
+    bias_matrix_list.append(input_bias)
 
+    for i, neuron_num in enumerate(n_hidden):
+        weight_matrix_list[i] = np.random.randn(n_hidden[i-1], n_hidden[neuron_num])
+        weight_matrix_list.append(weight_matrix_list)
+
+    for i, bias_num in enumerate(n_hidden):
+        bias_matrix_list[i] = np.random.randn(n_hidden[i-1])
+    """
+    What we should do is create the shape of the 
+    currect weight and bias based on the index. 
+    """
+    output_weights = np.random.randn(n_hidden[-1], n_output)
+    output_bias = np.random.randn(n_hidden[-1], n_output)
+
+    weight_matrix_list.append(output_weights)
+    bias_matrix_list.append(output_bias)
     
-
-
-
-
     return weight_matrix_list, bias_matrix_list
