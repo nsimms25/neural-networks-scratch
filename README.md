@@ -34,7 +34,7 @@ Project to create neural networks by scratch for a better understanding of forma
    
 # Two Layer Network and Explanation
 
-<pre>python n_input = 3 # 3 input features 
+<pre>n_input = 3 # 3 input features 
 n_hidden = 5 # 5 hidden neurons
 n_output = 2 # 2 output neurons (e.g. binary classification with softmax) </pre>
 
