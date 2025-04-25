@@ -9,7 +9,7 @@ def initialize_parameters_2_layers(n_input, n_hidden, n_output):
 
     weights_2 = np.random.randn(n_hidden, n_output)
     bias_2 = np.zeros(n_output, 1)
-
+    
     return weights_1, bias_1, weights_2, bias_2 
 
 # Here is an example for how the matrices look.
