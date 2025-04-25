@@ -35,12 +35,12 @@ def general_init_parameters(n_input: int, n_hidden: list[int], n_output, init_me
     weight_matrix_list.append(input_weights)
     bias_matrix_list.append(input_bias)
 
-    for i, neuron_num in enumerate(n_hidden):
-        weight_matrix_list[i] = np.random.randn(n_hidden[i-1], n_hidden[neuron_num])
-        weight_matrix_list.append(weight_matrix_list)
-
-    for i, bias_num in enumerate(n_hidden):
-        bias_matrix_list[i] = np.random.randn(n_hidden[i-1])
+    for i in range(1, len(n_hidden)):
+        weight_matrix = np.random.randn(n_hidden[i-1], n_hidden[i])
+        weight_matrix_list.append(weight_matrix)
+        
+        bias_matrix = np.random.randn(n_hidden[i-1], n_hidden[i])
+        bias_matrix_list.append(bias_matrix)
     """
     What we should do is create the shape of the 
     currect weight and bias based on the index. 
@@ -50,5 +50,5 @@ def general_init_parameters(n_input: int, n_hidden: list[int], n_output, init_me
 
     weight_matrix_list.append(output_weights)
     bias_matrix_list.append(output_bias)
-    
+
     return weight_matrix_list, bias_matrix_list
