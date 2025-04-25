@@ -75,6 +75,7 @@ weight_2 = [
 bias_2 = [0,
           0
            ]
+           
     shape = (2, 1)
 
 - Output layer transformation
