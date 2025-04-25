@@ -1,6 +1,7 @@
 # neural-networks-scratch
+Project to create neural networks by scratch for a better understanding of formats and functions.
 
-🔁 Common Activation Functions
+# Common Activation Functions
 1. Sigmoid
  - sigmoid(z) = 1 / (1+e^(−z))
 
@@ -31,7 +32,7 @@
 
     Issue: “Dying ReLU” — neurons can get stuck and always output 0
    
-Two Layer Network and Explanation
+# Two Layer Network and Explanation
 
 n_input = 3    # 3 input features
 n_hidden = 5   # 5 hidden neurons
