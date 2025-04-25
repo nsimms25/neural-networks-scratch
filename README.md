@@ -72,10 +72,10 @@ weight_2 = [
 ]  
       shape = (2, 5)
 
-bias_2 = [0,
+bias_1 = [0,
           0
            ]
-           
+    
     shape = (2, 1)
 
 - Output layer transformation
