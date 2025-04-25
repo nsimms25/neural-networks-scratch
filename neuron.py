@@ -1,25 +1,5 @@
 import numpy as np
 
-# Basic activation functions
-def sigmoid(x):
-    return 1/(1 + np.exp(-x))
-
-def relu(x):
-    return max(0, x)
-
-def tanh(x):
-    (np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x))
-
-def leaky_relu(x):
-    if x > 0 :
-        return x
-    if x <= 0:
-        return 0.01 * x
-
-#print(relu(-5))
-#print(leaky_relu(-1))
-#print(leaky_relu(-10))
-
 # Basic 2 layer network.
 def initialize_parameters_2_layers(n_input, n_hidden, n_output):
     np.random.seed(24)
