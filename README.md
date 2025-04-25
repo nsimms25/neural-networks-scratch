@@ -63,8 +63,8 @@ bias_1 = [0,
     
     shape = (5, 1)
 
-- Hidden layer linear transformation
-      Z1 = W1⋅X + b1 ⇒ (5,3)⋅(3,1)=(5,1)
+Hidden layer linear transformation
+<pre>Z1 = W1⋅X + b1 ⇒ (5,3)⋅(3,1)=(5,1) </pre>
 
 weight_2 = [
     [0.2, -0.1, 0.05, -0.3, 0.1],
