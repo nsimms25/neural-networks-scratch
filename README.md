@@ -33,6 +33,7 @@ Project to create neural networks by scratch for a better understanding of forma
     Issue: “Dying ReLU” — neurons can get stuck and always output 0
    
 # Two Layer Network and Explanation
+Here are the input examples for a 2 layer Neural Network.
 
 <pre>n_input = 3 # 3 input features 
 n_hidden = 5 # 5 hidden neurons
