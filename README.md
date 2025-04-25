@@ -69,7 +69,8 @@ Hidden layer linear transformation
 weight_2 = [
     [0.2, -0.1, 0.05, -0.3, 0.1],
     [-0.2, 0.3, -0.05, 0.1, -0.4]
-]  
+]     
+      
       shape = (2, 5)
 
 bias_1 = [0,
