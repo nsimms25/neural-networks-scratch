@@ -70,7 +70,7 @@ weight_2 = [
     [0.2, -0.1, 0.05, -0.3, 0.1],
     [-0.2, 0.3, -0.05, 0.1, -0.4]
 ]     
-      
+
       shape = (2, 5)
 
 bias_1 = [0,
@@ -79,8 +79,8 @@ bias_1 = [0,
     
     shape = (2, 1)
 
-- Output layer transformation
-   Z2 = W2⋅A1 + b2 ⇒ (2,5)⋅(5,1)=(2,1)
+Output layer transformation
+<pre>Z2 = W2⋅A1 + b2 ⇒ (2,5)⋅(5,1)=(2,1)</pre> 
 
 n_output = [y0,
             y1 ]
