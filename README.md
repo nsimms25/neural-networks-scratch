@@ -34,9 +34,9 @@ Project to create neural networks by scratch for a better understanding of forma
    
 # Two Layer Network and Explanation
 
- n_input = 3    # 3 input features
- n_hidden = 5   # 5 hidden neurons
- n_output = 2   # 2 output neurons (e.g. binary classification with softmax)
+   n_input = 3    # 3 input features
+   n_hidden = 5   # 5 hidden neurons
+   n_output = 2   # 2 output neurons (e.g. binary classification with softmax)
 
 n_input = [ x1,
             x2,
@@ -63,7 +63,7 @@ bias_1 = [0,
     shape = (5, 1)
 
 - Hidden layer linear transformation
-   Z1 = W1⋅X + b1 ⇒ (5,3)⋅(3,1)=(5,1)
+      Z1 = W1⋅X + b1 ⇒ (5,3)⋅(3,1)=(5,1)
 
 weight_2 = [
     [0.2, -0.1, 0.05, -0.3, 0.1],
